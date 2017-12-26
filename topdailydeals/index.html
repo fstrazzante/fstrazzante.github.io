@@ -1,1 +1,70 @@
-prova
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Top Daily Deals</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="topbar">
+            <img id="logo" src="img/logo.png">
+            <h1 id="title">Top Daily Deals</h1>
+            <h4 id="subtitle">Le migliori offerte giornaliere di Amazon</h4>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/telegramtlow.png"></div>
+                <div class="swiper-slide"><img src="img/facebooktlow.png"></div>
+                <div class="swiper-slide"><img src="img/twittertlow.png"></div>
+            </div>
+        </div>
+
+        <div id="description">
+            <h2>Lascia fare il lavoro sporco all'algoritmo</h2>
+            <p>TopDailyDeals è un servizio gratuito ed automatizzato che cerca le migliori offerte giornaliere di Amazon e le invia ad intervalli regolari! Iscriviti subito ai canali social e per farti scappare nemmeno un'offerta!</p>
+            <a href="https://t.me/topddeals" target="_blank"><button type="button" id="telegram">Telegram</button></a>
+            <a href="https://www.facebook.com/topddeals/" target="_blank"><button type="button" id="facebook">Facebook</button></a>
+            <a href="https://twitter.com/topddeals" target="_blank"><button type="button" id="twitter">Twitter</button></a>
+            <a href="https://it.pinterest.com/topddeals/" target="_blank"><button type="button" id="pinterest">Pinterest</button></a>
+        </div>
+
+        <!-- <div class="footer-container">
+            <footer class="wrapper">
+                <h3>Inspired by modern technology and vintage quality</h3>
+            </footer>
+        </div> -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+        <script src="js/swiper.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111608392-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-111608392-1');
+        </script>
+
+    </body>
+</html>
