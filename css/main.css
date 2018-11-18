@@ -51,13 +51,22 @@ textarea {
     padding: 0.2em 0;
 }
 
+:root {
+    --blue-cl: #163b92;
+    --orange1-cl:#f16529;
+    --orange2-cl:#e44d26;
+}
+
 
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   EDIT: Francesco Strazzante;
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .wrapper {
@@ -70,22 +79,25 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid var(--orange2-cl);
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid var(--orange2-cl);
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: var(--orange1-cl);
 }
 
-.title {
+header h1.title {
     color: white;
+    margin: 12px 0;
+    font-size: 33px;
+    text-align: center;
 }
 
 /* ==============
@@ -108,7 +120,7 @@ nav a {
     font-weight: bold;
 
     color: white;
-    background: #e44d26;
+    background: var(--orange2-cl);
 }
 
 nav a:hover,
@@ -173,15 +185,15 @@ section p {
 section h4 {
     margin: 0 0 5px;
 }
-
+img#mail, img#linkedin {
+    margin: 16px 5px;
+}
 img#mail{
-    float: left;
-    margin: 0 10px 0 0;
-    width: 30px;
+    margin-left: 30px;
 }
 
 a{
-    text-decoration: none;
+    text-decoration: underline;
     color: #163b92;
 }
 
@@ -196,6 +208,136 @@ article header {
 
 article h2{
     color: #163b92;
+}
+
+/* ==========================================================================
+   WORKS
+   ========================================================================== */
+.works{
+    margin-bottom: 30px;
+}
+.works-container{
+    display: none;
+    -webkit-animation: fadein 2s; 
+    -moz-animation: fadein 2s; 
+    -ms-animation: fadein 2s; 
+    -o-animation: fadein 2s; 
+    animation: fadein 2s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.bold{
+    font-weight: 600;
+}
+#box h2{
+    font-size: 23px;
+}
+#box p,#box h2,#box h4{
+    color: white;
+}
+.details{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: var(--blue-cl)!important;
+}
+
+#toggle-works{
+    margin: 0 0 30px;
+}
+#box{
+    padding: 0;
+    height: 500px;
+    background-color: var(--orange1-cl);
+    will-change: transform; 
+    margin: 20px;
+    transform: scale3d(1,1,1) rotateX(0deg) rotateY(0deg);
+    perspective: 1000;
+    -webkit-transform: scale3d(1,1,1) rotateX(0deg) rotateY(0deg);
+    -webkit-perspective: 1000;
+    -moz-transform: scale3d(1,1,1) rotateX(0deg) rotateY(0deg);
+    -moz-perspective: 1000;
+    -o-transform: scale3d(1,1,1) rotateX(0deg) rotateY(0deg);
+    -o-perspective: 1000;
+    -ms-transform: scale3d(1,1,1) rotateX(0deg) rotateY(0deg);
+    -ms-perspective: 1000;
+    transform: scale3d(1,1,1) rotateX(0deg) rotateY(0deg);
+    perspective: 1000;
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+#box div{
+    height: 100%;
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    position: absolute;
+}
+#box:hover div{
+    -webkit-transform: translate3d(0px, 0px, 40px);
+    -moz-transform: translate3d(0px, 0px, 40px);
+    -o-transform: translate3d(0px, 0px, 40px);
+    -ms-transform: translate3d(0px, 0px, 40px);
+    transform: translate3d(0px, 0px, 40px);
+}
+#box div.title h4{
+    font-size: 13px;
+}
+#box div.image{
+    padding: 0;
+}
+#box div.image img{
+    width: 280px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+#box div.year, #box div.visit{
+    width: 180px;
+    padding: 0;
+}
+#box div.visit{
+    width: 100%;
+}
+#box div.year p, #box div.visit p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    position: absolute;
+    font-size: 30px;
+    background-color: #163b92;
+    padding: 0 18px;
+    bottom: 244px;
+}
+#box div.visit p{
+    right: 0
 }
 
 /* ==========================================================================
@@ -223,6 +365,10 @@ article h2{
     nav li:last-child a {
         margin-right: 0;
     }
+    header.title{
+        text-align: none;
+    }
+    
 
 /* ========================
     INTERMEDIATE: IE Fixes
@@ -269,7 +415,7 @@ article h2{
 
     .main article {
         float: left;
-        width: 57%;
+        /*width: 57%;*/
     }
 
     .main aside {
@@ -287,6 +433,16 @@ article h2{
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
+    }
+    #box div{
+        padding: 30px;
+    }
+    #box div.image img{
+        width: 350px;
+    }
+    #box div.visit p {
+        right: unset;
+        bottom: 41px
     }
 }
 
@@ -337,6 +493,7 @@ article h2{
 .clearfix {
     *zoom: 1;
 }
+
 
 /* ==========================================================================
    Print styles
