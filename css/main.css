@@ -386,6 +386,7 @@ article h2{
         float: left;
     }
     #social{
+        margin: 0;
         float: right;
         width: unset;
     }
