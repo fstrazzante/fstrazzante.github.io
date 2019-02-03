@@ -1,6 +1,32 @@
+$(document).ready(function () {
+	if (window.location.href.indexOf("#work") > -1) {
+		$(".works-container").css("display", "block")
+		$("#toggle-works").text("hide works")
+		$("#toggle-works").attr('href', '#works')
+		$("html, body").animate({ scrollTop: $(".works-container").offset().top }, 1000);
+	} else if (window.location.href.indexOf("#we") > -1){
+		$("html, body").animate({ scrollTop: $("#we").offset().top }, 1000);
+		$(".works-container").css("display", "block")
+		$("#toggle-works").text("hide works")
+		$("#toggle-works").attr('href', '#works')
+	}
+});
+
+$("#we-btn").click(()=>{
+	$("html, body").animate({ scrollTop: $("#we").offset().top }, 1000);
+	$(".works-container").css("display", "block")
+	$("#toggle-works").text("hide works")
+	$("#toggle-works").attr('href', '#works')
+})
+
+$("#edu-btn").click(() => {
+	$("html, body").animate({ scrollTop: $("#edu").offset().top }, 1000);
+})
+
 $("#toggle-works").click(function() {
 	if($(".works-container").css("display")=="none"){
-		$(".works-container").css("display", "block");
+		$(".works-container").css("display", "block")
+		$("html, body").animate({ scrollTop: $(".works-container").offset().top }, 1000);
 		$("#toggle-works").text("hide works")
 		$("#toggle-works").attr('href', '#works')
 	}else{

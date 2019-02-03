@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/glitch.css">
 
         <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
@@ -52,14 +53,19 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">Francesco Strazzante</h1>
-                <a href="mailto:f.strazzante@gmail.com" id="mail" target="blank"><img src="img/mail.webp" alt="mail" id="mail"></a>
-                <a href="https://www.linkedin.com/in/fstrazzante/" id="linkedin" target="blank"><img src="img/linkedin.webp" id="linkedin" alt="LinkedIn" ></a>
+                <h1 class="title glitch" data-text="Francesco Strazzante">Francesco Strazzante</h1>
+                <div id="social">
+                    <a href="mailto:f.strazzante@gmail.com" id="mail" target="blank">
+                        <div class="email"></div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/fstrazzante/" id="linkedin" target="blank">
+                        <div class="linkedin"></div>
+                    </a>
+                </div>
                 <nav>
                     <ul>
-                        <li><a href="#we">experience</a></li>
-                        <li><a href="#e">education</a></li>
-                        <li><a href="#s">skills</a></li>
+                        <li><a href="#" id="we-btn">experience</a></li>
+                        <li><a href="#" id="edu-btn">education</a></li>
                     </ul>
                 </nav>
             </header>
@@ -72,23 +78,23 @@
                         <h2>developer and student</h2>
                         <p>Hi everyone, I'm Francesco.<br>Bio: I've been involved into computer science since I created my first Wordpress self-hosted website in 2009. As time went on I participated to several <a href="https://en.wikipedia.org/wiki/Linux_user_group">LUG</a> and I developed my first website on a Ubuntu server. In the meantime the app market was born and I started to get interested of this world; my first crossplatform app was <a href="http://www.pizzup.it/">PizzUp</a>. Coming to the present I'm a full time student and I work as freelancer. I'm a tech entusiast and I love to travel and experience new cultures.</p>
                     </header>
-                    <section>
-                        <h2><a name="we">work experience</a> (<a href="#works" id="toggle-works">show works</a>)</h2>
+                    <section id="we">
+                        <h2><a>work experience</a> (<a href="#works" id="toggle-works">show works</a>)</h2>
                         <h4>2013 to present: Developer</h4>
                         <p>Since 2013 I'm collaborating with <a href="http://www.web3king.com" target="blank">web3king</a> and other companies to develop custom websites, cross-platform mobile apps (iOS and Android), rest API, management panels, custom plugins and themes for Wordpress.</p>
                         <p class="tags"> <span class="tags">appcelerator</span> <span class="tags">javascript</span> <span class="tags">codeigniter</span> <span class="tags">php</span> <span class="tags">html</span> <span class="tags">css</span> <span class="tags">mysql</span> <span class="tags">wordpress</span> <span class="tags">courses</span> <span class="tags">nodejs</span></p>
                         <h4>2018: External Consultant</h4>
                         <p>I created and taught a special course of mobile application development for high school students. I specially designed the course to cover the main areas of mobile developing to let them reach the target that was to develop the common game Minesweeper Flags. During the courses I created and submitted engaging quizzes to introduce new topics and reinforce the daily topics.</p>
                         <p class="tags"> <span class="tags">appcelerator</span> <span class="tags">javascript</span></p>
-                        <div class="works" id="works">
-                            <div class="works-container" id="works">
+                        <div class="works">
+                            <div class="works-container">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div id="box" style="margin:20px">
                                             <div class="title">
                                                 <h4 class="details">title</h4>
                                                 <h2><span class="bold">Working on</span></h2>
-                                                <h4 class="details" style="margin-top: 20px;">tecn</h4>
+                                                <h4 class="details" style="margin-top: 20px;">tech</h4>
                                                 <p>nodejs, Express API, DB designing, crossplatform app, Wordpress customization, HTML, PHP, javascript, CSS.</p>
                                             </div>
                                             <div class="year">
@@ -115,7 +121,7 @@
                                             <div class="title">
                                                 <h4 class="details">title</h4>
                                                 <h2><span class="bold">Scuola Danza Peia</span>: wordpress website.</h2>
-                                                <h4 class="details" style="margin-top: 20px;">tecn</h4>
+                                                <h4 class="details" style="margin-top: 20px;">tech</h4>
                                                 <p>Wordpress customization, HTML, PHP, javascript, CSS.</p>
                                             </div>
                                             <div class="image">
@@ -125,7 +131,7 @@
                                                 <p>2018</p>
                                             </div>
                                             <div class="visit">
-                                                <a href="http://www.scuoladanzapeia.it" target="_blank"><p>GO ></p></a>
+                                                <a href="http://www.scuoladanzapeia.it" rel="noreferrer" target="_blank"><p>GO ></p></a>
                                             </div>
                                         </div>
                                     </div>
@@ -134,7 +140,7 @@
                                             <div class="title">
                                                 <h4 class="details">title</h4>
                                                 <h2><span class="bold">BMI</span>: wordpress website.</h2>
-                                                <h4 class="details" style="margin-top: 20px;">tecn</h4>
+                                                <h4 class="details" style="margin-top: 20px;">tech</h4>
                                                 <p>Wordpress customization, HTML, PHP, javascript, CSS.</p>
                                             </div>
                                             <div class="image">
@@ -144,7 +150,7 @@
                                                 <p>2018</p>
                                             </div>
                                             <div class="visit">
-                                                <a href="http://www.bmiserramenti.it" target="_blank"><p>GO ></p></a>
+                                                <a href="http://www.bmiserramenti.it" rel="noreferrer" target="_blank"><p>GO ></p></a>
                                             </div>
                                         </div>
                                     </div>
@@ -153,7 +159,7 @@
                                             <div class="title">
                                                 <h4 class="details">title</h4>
                                                 <h2><span class="bold">MT</span>: management panel and API.</h2>
-                                                <h4 class="details" style="margin-top: 20px;">tecn</h4>
+                                                <h4 class="details" style="margin-top: 20px;">tech</h4>
                                                 <p>API and DB designing, PHP, MySQL, codeigniter, javascript.</p>
                                             </div>
                                             <div class="image">
@@ -169,7 +175,7 @@
                                             <div class="title">
                                                 <h4 class="details">title</h4>
                                                 <h2><span class="bold">Biodiverso</span>: mobile app and management panel.</h2>
-                                                <h4 class="details" style="margin-top: 20px;">tecn</h4>
+                                                <h4 class="details" style="margin-top: 20px;">tech</h4>
                                                 <p>Appcelerator, PHP, MySQL, codeigniter, javascript, API.</p>
                                             </div>
                                             <div class="image">
@@ -185,7 +191,7 @@
                                             <div class="title">
                                                 <h4 class="details">title</h4>
                                                 <h2><span class="bold">EQUI2000</span>: custom wordpress plugin.</h2>
-                                                <h4 class="details" style="margin-top: 20px;">tecn</h4>
+                                                <h4 class="details" style="margin-top: 20px;">tech</h4>
                                                 <p>Wordpress, custom plugin, PHP, javascript, API.</p>
                                             </div>
                                             <div class="image">
@@ -202,7 +208,7 @@
                                             <div class="title">
                                                 <h4 class="details">title</h4>
                                                 <h2><span class="bold">Poliplast</span>: wordpress website.</h2>
-                                                <h4 class="details" style="margin-top: 20px;">tecn</h4>
+                                                <h4 class="details" style="margin-top: 20px;">tech</h4>
                                                 <p>Wordpress, custom responsive theme, PHP, MySQL, multi-language, javascript, HTML, CSS, animation.</p>
                                             </div>
                                             <div class="image">
@@ -212,7 +218,7 @@
                                                 <p>2015</p>
                                             </div>
                                             <div class="visit">
-                                                <a href="http://www.poliplastspa.com" target="_blank"><p>GO ></p></a>
+                                                <a href="http://www.poliplastspa.com" rel="noreferrer" target="_blank"><p>GO ></p></a>
                                             </div>
                                         </div>
                                     </div>
@@ -220,17 +226,17 @@
                             </div>
                         </div>
                     </section>
-                    <section>
+                    <section id="pr">
                         <h2>projects</h2>
                         <h4>Top Daily Deals (<a href="/topdailydeals">link</a>)</h4>
-                        <p>Top Daily Deals is a service that shares the best daily offers of Amazon relied on different parameters such as amount of discount, reviews, etc. Tecnically, it's composed by two different algoritms, one searches the best offers and the second one shares them on <a href="https://www.facebook.com/topddeals/" target="blank">Facebook</a>, <a href="https://twitter.com/topddeals" target="blank">Twitter</a>, <a href="https://t.me/topddeals" target="blank">Telegram</a> and <a href="https://it.pinterest.com/topddeals/" target="blank">Pinterest</a></p>
+                        <p>Top Daily Deals is a service that shares the best daily offers of Amazon relied on different parameters such as amount of discount, reviews, etc. techically, it's composed by two different algoritms, one searches the best offers and the second one shares them on <a href="https://www.facebook.com/topddeals/" target="blank">Facebook</a>, <a href="https://twitter.com/topddeals" target="blank">Twitter</a>, <a href="https://t.me/topddeals" target="blank">Telegram</a> and <a href="https://it.pinterest.com/topddeals/" target="blank">Pinterest</a></p>
                         <p class="tags"> <span class="tags">nodejs</span> <span class="tags">javascript</span> <span class="tags">api</span> <span class="tags">mongodb</span></p>
                         <h4>FROG Co</h4>
                         <p>During the last year of the high school I developed and run a tech blog with two classmates. We were used to post tips about Android and iOS, some reviews and tech stuff. The blog was based on Worpdress (we created also the template) and hosted on our server.</p>
                         <p class="tags"> <span class="tags">wordpress</span> <span class="tags">php</span> <span class="tags">html</span> <span class="tags">css</span> <span class="tags">javascript</span></p>
                     </section>
-                    <section>
-                        <h2><a name="e">education</a></h2>
+                    <section id="edu">
+                        <h2><a>education</a></h2>
                         <h4>Università degli Studi di Bergamo (Italy)</h4>
                         <p>2015 - present: Computer Science Engineering - Bachelor of Science (BSc)</p>
                         <h4>Fachhochschule Technikum Wien (Austria)</h4>
@@ -238,8 +244,6 @@
                         <h4>ISISS Valle Seriana</h4>
                         <p>2015: Diploma of Computer Science and Telecommunications</p>
                     </section>
-                        <h2><a name="s">skills</a></h2>
-                        <p class="tags"> <span class="tags">appcelerator</span> <span class="tags">javascript</span> <span class="tags">codeigniter</span> <span class="tags">php</span> <span class="tags">html</span> <span class="tags">css</span> <span class="tags">mysql</span> <span class="tags">mongodb</span> <span class="tags">wordpress</span></p>
                 </article>
 
                 <!-- <aside>
