@@ -96,10 +96,9 @@ body {
 header h1.title {
     font-weight: bold;
     text-align: center;
-    margin: 16px auto;
-    font-size: 33px;
-    width: 350px;
-    float: left;
+    margin: 16px auto 0;
+    font-size: 25px;
+    width: 90%;
 }
 
 /* ==============
@@ -176,8 +175,14 @@ span.tags {
     color: #5f5f5f;
 }
 
+a{
+    text-decoration: underline;
+    color: #163b92;
+}
+
 p.tags {
     margin: 15px 0 40px;
+    line-height: 30px;
 }
 
 section p {
@@ -219,11 +224,10 @@ a:hover .linkedin{
     float: unset;
     display: flow-root;
     text-align: center;
+    margin: 5px 0
 }
-
-a{
-    text-decoration: underline;
-    color: #163b92;
+#social a{
+    text-decoration: none
 }
 
 article header {
